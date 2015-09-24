@@ -1,0 +1,8 @@
+c:\users\евгений\documents\visual studio 2010\Projects\Lab1_Class\Lab1_Class\bin\Debug\Lab1_Class.exe
+c:\users\евгений\documents\visual studio 2010\Projects\Lab1_Class\Lab1_Class\bin\Debug\Lab1_Class.pdb
+c:\users\евгений\documents\visual studio 2010\Projects\Lab1_Class\Lab1_Class\obj\x86\Debug\Lab1_Class.exe
+c:\users\евгений\documents\visual studio 2010\Projects\Lab1_Class\Lab1_Class\obj\x86\Debug\Lab1_Class.pdb
+C:\Users\Евгений\Desktop\myLabs\Lab1_Class\Lab1_Class\obj\x86\Debug\Lab1_Class.exe
+C:\Users\Евгений\Desktop\myLabs\Lab1_Class\Lab1_Class\obj\x86\Debug\Lab1_Class.pdb
+C:\Users\Евгений\Desktop\myLabs\Lab1_Class\Lab1_Class\bin\Debug\Lab1_Class.exe
+C:\Users\Евгений\Desktop\myLabs\Lab1_Class\Lab1_Class\bin\Debug\Lab1_Class.pdb
