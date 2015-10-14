@@ -1,6 +1,6 @@
 ﻿using System;
 
-public interface Plane: Transport
+public class Plane: Transport
 {
     string type = "Aircraft";
     string name;

@@ -7,27 +7,36 @@ namespace Lab1_Class
 {
     class Program
     {
-        public string[] transports= new string[10];
+        static Transport[] transports= new Transport[10];
+        static int current = 0;
         static void Main(string[] args)
         {
             bool cycle = true;
             while (cycle)
             {
-                string type=null, temp=null;
+                string type = null;
                 int state=0;
-                System.Console.WriteLine("Input 'Create <type>' to make new transport.(Aircraft/Ground/Naval)");// state 1
-                System.Console.WriteLine("Input 'Read' to list all created transports");// state 2
-                System.Console.WriteLine("Input 'Quit' to stop this program");//state 3
+                System.Console.WriteLine("Input 'Create <type>' to make new transport.(Aircraft/Ground/Naval)");
+                System.Console.WriteLine("Input 'List' to list all created transports");
+                System.Console.WriteLine("Input 'Quit' to stop this program");
 
                 string input = System.Console.ReadLine();
                 if (input.Equals("Quit"))
                 {
                     cycle=false;
-                    state = 3;
-                }
-                if (input.Equals("Read"))
+                  }
+                if (input.Equals("List"))
                 {
-                    state = 2;
+                    System.Console.WriteLine("Listing created transports");
+                    System.Console.WriteLine("--------------------------");
+                    if(current>0)
+                    for (int i=0;i< current; i++)
+                    {
+                        System.Console.WriteLine(transports[i].getName()+"-"+transports[i].getType());
+    
+                    }
+                    System.Console.WriteLine("--------------------------");
+
                 }
                 if ((input.Length >= 6) && (input.Substring(0, 6).Equals("Create")))
                 {
@@ -37,18 +46,30 @@ namespace Lab1_Class
                     switch (input)
                     {
                         case "Naval": type = "Naval";
+                            System.Console.WriteLine("Type " + type + " acquired. Input <name>");
+                            input = System.Console.ReadLine();
+                            transports[current] = new Boat(input);
+                            current++;
                             break;
+
                         case "Aircraft": type = "Aircraft";
+                            System.Console.WriteLine("Type " + type + " acquired. Input <name>");
+                            input = System.Console.ReadLine();
+                            transports[current] = new Plane(input);
+                            current++;
                             break;
+
                         case "Ground": type = "Ground";
+                            System.Console.WriteLine("Type " + type + " acquired. Input <name>");
+                            input = System.Console.ReadLine();
+                            transports[current] = new Car(input);
+                            current++;
                             break;
+
                         default: System.Console.WriteLine("Not suitable <type> input");
                             break;
                     }
                 }
-                System.Console.WriteLine("Type " + type + " acquired. Input <name>");
-                input=System.Console.ReadLine();
-
                 
 
 

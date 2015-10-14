@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Boat
+public class Boat : Transport
 {  string type = "Naval";
     string name;
 
