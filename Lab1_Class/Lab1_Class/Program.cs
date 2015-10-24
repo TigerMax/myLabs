@@ -32,7 +32,7 @@ namespace Lab1_Class
                     if(current>0)
                     for (int i=0;i< current; i++)
                     {
-                        System.Console.WriteLine(transports[i].getName()+"-"+transports[i].getType());
+                        System.Console.WriteLine(transports[i].getName()+"-"+transports[i].getType()+"-"+ transports[i].makeSound());
     
                     }
                     System.Console.WriteLine("--------------------------");

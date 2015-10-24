@@ -9,16 +9,16 @@ public class Car : Transport
     {
         name = n;
     }
-    public string getName() {
+    public override string getName() {
         return name;
     }
-    public string getType() {
+    public override string getType() {
         return type;
     }
-    public string makeSound() {
+    public override string makeSound() {
         return "Beep";
     }
-    public string move() {
+    public override string move() {
         return "Wroom!";
     }
 }

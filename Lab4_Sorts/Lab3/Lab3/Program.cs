@@ -11,14 +11,24 @@ namespace ConsoleApplication1
 
         static void Main(string[] args)
         {
+            IComparable[] arr = new IComparable[10];
+
             Console.WriteLine("BubbleSort");
-            BubbleSort(randomizeArray(10));
+            arr = randomizeArray(arr.Length, "char");
+            writeArray(arr);
+            BubbleSort(arr);
             Console.WriteLine("");
+
             Console.WriteLine("InsertSort");
-            InsertSort(randomizeArray(10));
+            arr = randomizeArray(arr.Length, "char");
+            writeArray(arr);
+            InsertSort(arr);
             Console.WriteLine("");
+
             Console.WriteLine("ShellSort");
-            ShellSort(randomizeArray(10));
+            arr = randomizeArray(arr.Length, "char");
+            writeArray(arr);
+            ShellSort(arr);
             Console.WriteLine("");
 
 
@@ -26,15 +36,21 @@ namespace ConsoleApplication1
 
         }
 
-        static IComparable[] randomizeArray(int length)
+        static IComparable[] randomizeArray(int length, string type) //char or int
         {
             Random rnd = new Random();
             IComparable[] outarr = new IComparable[length];
             for (int i = 0; i < length; i++)
             {
-                outarr[i] = rnd.Next(101);
+                if (type != "char")
+                {
+                    outarr[i] = rnd.Next(101);
+                }
+                else
+                {
+                    outarr[i] = (char)('a' + rnd.Next(0, 26));
+                }
             }
-            writeArray(outarr);
             return outarr;
         } //Возвращает случайный массив
 
@@ -45,6 +61,17 @@ namespace ConsoleApplication1
                 Console.Write(Convert.ToString(inarr[i]) + ' ');
             }
         } //Вывести массив в консоль
+
+        static bool ifSorted(IComparable[] arr)
+        {
+            bool sorted = true;
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                if (arr[i].CompareTo(arr[i + 1]) > 0)
+                    sorted = false;
+            }
+            return sorted;
+        }
 
         static bool compare(IComparable a, IComparable b)
         {

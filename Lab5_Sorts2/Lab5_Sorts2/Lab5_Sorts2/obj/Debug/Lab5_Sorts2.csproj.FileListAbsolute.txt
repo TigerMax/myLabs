@@ -1,0 +1,6 @@
+C:\Users\Philippov\Desktop\myLabs\Lab5_Sorts2\Lab5_Sorts2\Lab5_Sorts2\bin\Debug\Lab5_Sorts2.exe.config
+C:\Users\Philippov\Desktop\myLabs\Lab5_Sorts2\Lab5_Sorts2\Lab5_Sorts2\bin\Debug\Lab5_Sorts2.exe
+C:\Users\Philippov\Desktop\myLabs\Lab5_Sorts2\Lab5_Sorts2\Lab5_Sorts2\bin\Debug\Lab5_Sorts2.pdb
+C:\Users\Philippov\Desktop\myLabs\Lab5_Sorts2\Lab5_Sorts2\Lab5_Sorts2\obj\Debug\Lab5_Sorts2.csprojResolveAssemblyReference.cache
+C:\Users\Philippov\Desktop\myLabs\Lab5_Sorts2\Lab5_Sorts2\Lab5_Sorts2\obj\Debug\Lab5_Sorts2.exe
+C:\Users\Philippov\Desktop\myLabs\Lab5_Sorts2\Lab5_Sorts2\Lab5_Sorts2\obj\Debug\Lab5_Sorts2.pdb

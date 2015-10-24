@@ -9,16 +9,16 @@ public class Plane: Transport
     {
         name = n;
     }
-    public string getName() {
+    public override string getName() {
         return name;
     }
-    public string getType() {
+    public override string getType() {
         return type;
     }
-    public string makeSound() {
+    public override string makeSound() {
         return "Shhhhhh";
     }
-    public string move() {
+    public override string move() {
         return "Uuuueeeeew!";
     }
 }

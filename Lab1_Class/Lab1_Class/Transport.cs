@@ -1,10 +1,10 @@
 ﻿using System;
 
-public interface Transport
+  public abstract class Transport
 {
-    string makeSound();
-    string move();
-    string getName();
-    string getType();
+    public abstract string makeSound();
+    public abstract string move();
+    public abstract string getName();
+    public abstract string getType();
           
 }
